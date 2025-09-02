@@ -1,7 +1,6 @@
 // src/data/articlesData.js
 
 export const articles = [
-  // 12 ARTIKEL YANG SUDAH ADA
   {
     id: '1',
     title: 'Memahami HIV/AIDS',
@@ -34,7 +33,6 @@ export const articles = [
       <p>Mari kita sebarkan kesadaran dan hapus stigma, karena pemahaman dan empati adalah kunci untuk masa depan yang lebih sehat.</p>
     `,
   },
-  // ... pastikan Anda melakukan hal yang sama pada artikel lain
   {
     id: '2',
     title: 'Manfaat Tidur Cukup untuk Otak dan Tubuh',
@@ -168,3 +166,50 @@ export const articles = [
     content: `...`,
   },
 ];
+
+// DATA INFOGRAFIS
+export const infographics = [
+  {
+    id: 'info-1',
+    title: 'Cara menanggulangi HIV/AIDS',
+    thumbnailUrl: 'images/Sudah-Pahamkah-Kita-Dengan-Pencegahan-HIV-AIDS.jpeg',
+    imageUrl: 'images/Poster-Pencegahan-HIV-Kreatif-Berwarna-Ungu.png',
+    description: 'Ringkasan visual tentang HIV/AIDS, penularan, pengobatan, dan cara melawan stigma.',
+  },
+  {
+    id: 'info-2',
+    title: 'Manfaat Minum Air Putih',
+    thumbnailUrl: 'images/infographics/water-benefits-thumb.jpg',
+    imageUrl: 'images/infographics/water-benefits.jpg',
+    description: 'Kenali pentingnya hidrasi dan bagaimana air memengaruhi kesehatan Anda.',
+  },
+  {
+    id: 'info-3',
+    title: 'Siklus Tidur Manusia',
+    thumbnailUrl: 'images/infographics/sleep-cycle-thumb.jpg',
+    imageUrl: 'images/infographics/sleep-cycle.jpg',
+    description: 'Bagaimana otak dan tubuh bekerja saat Anda tidur.',
+  },
+  {
+    id: 'info-4',
+    title: 'Tips Mengatasi Stres',
+    thumbnailUrl: 'images/infographics/stress-tips-thumb.jpg',
+    imageUrl: 'images/infographics/stress-tips.jpg',
+    description: '7 langkah sederhana untuk mengelola stres harian.',
+  },
+  {
+    id: 'info-5',
+    title: 'Fakta dan Mitos HIV/AIDS',
+    thumbnailUrl: 'images/infographics/hiv-aids-infographic-thumb.png',
+    imageUrl: 'images/infographics/hiv-aids-infographic.png',
+    description: 'Ringkasan visual tentang HIV/AIDS, penularan, pengobatan, dan cara melawan stigma.',
+  },
+];
+
+// --- SOCIAL LINKS ---
+export const socialLinks = {
+  tiktok: 'https://www.tiktok.com/@yourusername',
+  instagram: 'https://www.instagram.com/yourusername',
+  facebook: 'https://www.facebook.com/yourusername',
+  x: 'https://x.com/yourusername',
+};
