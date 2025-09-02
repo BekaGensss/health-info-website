@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -21,11 +21,30 @@ const BMICalculatorPage = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   const particlesOptions = {
-    // ... (Logika partikel tetap sama)
+    background: {
+      color: { value: "transparent" },
+    },
+    fpsLimit: 120,
+    interactivity: {
+      events: { onClick: { enable: true, mode: "push" }, onHover: { enable: true, mode: "repulse" }, resize: true },
+      modes: { bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40 }, push: { quantity: 4 }, repulse: { distance: 200, duration: 0.4 } },
+    },
+    particles: {
+      color: { value: "#d1d5db" },
+      links: { color: "#d1d5db", distance: 150, enable: true, opacity: 0.5, width: 1 },
+      collisions: { enable: true },
+      move: { direction: "none", enable: true, outMode: "bounce", random: false, speed: 1, straight: false },
+      number: { density: { enable: true, value_area: 800 }, value: 80 },
+      opacity: { value: 0.5 },
+      shape: { type: "circle" },
+      size: { random: true, value: 5 },
+    },
+    detectRetina: true,
   };
 
   const darkParticlesOptions = {
-    // ... (Logika partikel tetap sama)
+    ...particlesOptions,
+    particles: { ...particlesOptions.particles, color: { value: "#6ee7b7" }, links: { ...particlesOptions.particles.links, color: "#6ee7b7" } },
   };
 
   return (
@@ -36,7 +55,7 @@ const BMICalculatorPage = ({ isDarkMode, setIsDarkMode }) => {
         init={particlesInit}
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
-      <div className="relative z-10 flex-grow">
+      <div className="relative z-10 flex flex-col min-h-screen">
         <Helmet>
           <title>BMI Kalkulator | Info Sehat</title>
           <meta name="description" content="Hitung Indeks Massa Tubuh (BMI) Anda dengan kalkulator sederhana dan akurat." />
@@ -44,7 +63,7 @@ const BMICalculatorPage = ({ isDarkMode, setIsDarkMode }) => {
         
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         
-        <main className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center justify-center">
+        <main className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center justify-center flex-grow">
           <section className="text-center mb-12" data-aos="fade-up">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 leading-tight flex justify-center items-center gap-2">
               <FiTarget className="text-teal-500" />
@@ -60,7 +79,7 @@ const BMICalculatorPage = ({ isDarkMode, setIsDarkMode }) => {
           </div>
         </main>
         
-        <Footer />
+        <Footer isDarkMode={isDarkMode} />
       </div>
     </div>
   );
