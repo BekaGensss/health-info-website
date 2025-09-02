@@ -1,8 +1,9 @@
+// src/pages/BMICalculatorPage.jsx
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import BMICalculator from '../components/BMICalculator'; // Pastikan komponen ini ada
+import BMICalculator from '../components/BMICalculator';
 import { FiTarget } from 'react-icons/fi';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
