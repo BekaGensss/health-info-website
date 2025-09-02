@@ -1,6 +1,7 @@
+// src/components/Header.jsx
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi'; // Impor ikon
+import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
 
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -23,7 +24,10 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         </NavLink>
 
         {/* Tombol Hamburger untuk Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          <button onClick={toggleTheme} className="p-2 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
+            {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+          </button>
           <button onClick={toggleNav} className="text-gray-800 dark:text-white focus:outline-none">
             {isNavOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
@@ -47,7 +51,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       {/* Navigasi Mobile (Hamburger Menu) */}
-      <div className={`md:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-950 shadow-md transform transition-transform duration-300 ease-in-out ${isNavOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`md:hidden fixed top-16 left-0 w-full h-full bg-white dark:bg-gray-950 shadow-md transform transition-transform duration-300 ease-in-out ${isNavOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <nav className="flex flex-col p-4 space-y-4 text-center">
           <NavLink to="/" onClick={toggleNav} className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors duration-300">Beranda</NavLink>
           <NavLink to="/artikel-archive" onClick={toggleNav} className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors duration-300">Artikel</NavLink>
@@ -55,9 +59,6 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
           <NavLink to="/bmi-kalkulator" onClick={toggleNav} className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors duration-300">BMI Kalkulator</NavLink>
           <NavLink to="/tentang" onClick={toggleNav} className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors duration-300">Tentang Kami</NavLink>
           <NavLink to="/kontak" onClick={toggleNav} className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors duration-300">Kontak</NavLink>
-          <button onClick={toggleTheme} className="p-2 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
-            {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
-          </button>
         </nav>
       </div>
 
