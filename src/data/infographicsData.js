@@ -19,7 +19,7 @@ export const infographics = [
     id: 'info-3',
     title: 'Siklus Tidur Manusia',
     // Perbaikan: Jalur tanpa garis miring di awal
-    thumbnailUrl: 'images/infographics/sleep-cycle-thumb.jpg',
+    thumbnailUrl: 'images/Sudah Pahamkah Kita Dengan Pencegahan HIV_AIDS.jpeg',
     imageUrl: 'images/infographics/sleep-cycle.jpg',
     description: 'Bagaimana otak dan tubuh bekerja saat Anda tidur.',
   },
