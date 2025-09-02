@@ -1,4 +1,4 @@
-const a=[{id:"1",title:"Memahami HIV/AIDS",description:"Pahami perbedaan HIV dan AIDS, cara penularan, serta pentingnya melawan stigma.",imageUrl:"/images/healthy-lifestyle.png",category:"Kesehatan Umum",author:"Farah Qulbi Amelia",date:"1 Agustus 2025",tags:["hiv","aids","kesehatan","edukasi"],pdfUrl:"/documents/p407.pdf",content:`
+const a=[{id:"1",title:"Memahami HIV/AIDS",description:"Pahami perbedaan HIV dan AIDS, cara penularan, serta pentingnya melawan stigma.",imageUrl:"images/healthy-lifestyle.png",category:"Kesehatan Umum",author:"Farah Qulbi Amelia",date:"1 Agustus 2025",tags:["hiv","aids","kesehatan","edukasi"],pdfUrl:"documents/p407.pdf",content:`
      <p>HIV/AIDS sering kali diselimuti oleh kesalahpahaman dan stigma. Padahal, pemahaman yang benar adalah kunci untuk melawan penyebarannya dan memberikan dukungan bagi para pengidap. Mari kita luruskan fakta dan pahami isu ini secara lebih mendalam.</p>
 
 <h3>Mengenal HIV dan AIDS: Apa Perbedaannya?</h3>
