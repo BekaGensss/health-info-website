@@ -39,7 +39,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <Router>
+    <Router basename="/health-info-website">  {/* <-- Perbaikan: Tambahkan basename */}
       <HelmetProvider>
         <Suspense fallback={<div className="flex justify-center items-center h-screen text-xl text-gray-500 dark:text-gray-400">Memuat...</div>}>
           <Routes>
