@@ -6,7 +6,7 @@ export const articles = [
     id: '1',
     title: 'Memahami HIV/AIDS',
     description: 'Pahami perbedaan HIV dan AIDS, cara penularan, serta pentingnya melawan stigma.',
-    imageUrl: 'images/healthy-lifestyle.png', 
+    imageUrl: 'images/hiv-aids-awareness.png', 
     category: 'Kesehatan Umum',
     author: 'Farah Qulbi Amelia',
     date: '02 September 2025',

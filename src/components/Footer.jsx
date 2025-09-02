@@ -1,8 +1,8 @@
-// src/components/Footer.jsx
 import React, { useState, useEffect } from 'react';
 import { FiChevronUp } from 'react-icons/fi';
+import { socialLinks } from '../data/articlesData'; // Mengambil tautan dari file data
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
@@ -26,34 +26,34 @@ const Footer = () => {
     <footer className="bg-gray-800 dark:bg-gray-900 text-gray-300 py-6 transition-colors duration-300 relative">
       <div className="container mx-auto text-center px-4">
         
-        {/* Bagian Tautan Media Sosial dengan Ikon SVG */}
+        {/* Bagian Tautan Media Sosial */}
         <div className="flex flex-wrap justify-center items-center space-x-4 mb-4">
           
-          {/* Tautan X (Twitter) - Ikon 3D Mirip Asli */}
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors duration-300">
+          {/* Tautan X (Twitter) */}
+          <a href={socialLinks.x} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.12l-6.577-8.683L5.232 22.25H1.924l7.63-10.134L2.254 2.25H5.46l5.597 7.28L18.244 2.25z"/>
             </svg>
           </a>
 
-          {/* Tautan Facebook - Ikon 3D Mirip Asli */}
-          <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-400 transition-colors duration-300">
+          {/* Tautan Facebook */}
+          <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-400 transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" viewBox="0 0 48 48">
               <path fill="#3b5998" d="M24 2C12.95 2 4 10.95 4 22s8.95 20 20 20 20-8.95 20-20-8.95-20-20-20z"/>
               <path fill="#ffffff" d="M28.8 20.4h-3.6v-2.4c0-.6.4-1.2 1.2-1.2h2.4V14.4h-2.4c-1.8 0-3.6 1.8-3.6 3.6v2.4h-2.4v3.6h2.4v8.4h3.6v-8.4h2.4l.6-3.6z"/>
             </svg>
           </a>
 
-          {/* Tautan Instagram - Ikon 3D Mirip Asli */}
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
+          {/* Tautan Instagram */}
+          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" viewBox="0 0 24 24">
               <rect width="24" height="24" rx="5" ry="5" fill="#f09433"/>
               <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm5-8c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" fill="#ffffff"/>
             </svg>
           </a>
 
-          {/* Tautan TikTok - Ikon "Pokok" & Futuristik */}
-          <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors duration-300">
+          {/* Tautan TikTok */}
+          <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" viewBox="0 0 24 24">
               <defs>
                 <linearGradient id="tiktokGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
