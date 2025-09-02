@@ -4,10 +4,16 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Ini adalah trik agar React Router bisa menangkap rute yang benar setelah redirect
-      sessionStorage.redirect = location.href;
+      // Dapatkan nama repositori dari URL
+      const repoName = '/health-info-website';
+
+      // Gabungkan nama repositori dengan rute yang diminta
+      const path = window.location.pathname.replace(repoName, '');
+      const redirectUrl = repoName + '/#' + path;
+
+      // Alihkan browser ke URL yang benar
+      window.location.replace(redirectUrl);
     </script>
-    <meta http-equiv="refresh" content="0;URL=/">
   </head>
   <body>
     Anda akan diarahkan ke halaman utama...
