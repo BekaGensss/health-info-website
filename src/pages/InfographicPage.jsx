@@ -241,13 +241,13 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
               >
                 <FiX size={24} />
               </button>
-              <div className="flex flex-col p-4 gap-6">
+              <div className="flex flex-col p-4 gap-6 md:flex-row md:items-start">
                 <img 
                   src={selectedImage.imageUrl} 
                   alt={selectedImage.title} 
-                  className="max-w-full md:max-w-md lg:max-w-lg object-contain mx-auto" 
+                  className="max-w-full md:max-w-md lg:max-w-lg object-contain mx-auto md:mx-0" 
                 />
-                <div className="p-4 text-center">
+                <div className="p-4 text-center md:text-left flex-1">
                   <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">{selectedImage.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 text-base">{selectedImage.description}</p>
                 </div>

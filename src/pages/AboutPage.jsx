@@ -1,3 +1,4 @@
+// src/pages/AboutPage.jsx
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -118,7 +119,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative">
-      {/* Tambahkan latar belakang partikel */}
       <Particles
         id="tsparticles-about"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
@@ -126,7 +126,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
 
-      {/* Konten utama sekarang berada di atas partikel */}
       <div className="relative z-10">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <main className="container mx-auto px-4 py-12 md:py-20">
@@ -135,7 +134,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
             data-aos="fade-up"
           >
             
-            {/* Bagian Judul Utama */}
             <h1 
               className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-4 flex items-center justify-center gap-3"
               data-aos="fade-up"
@@ -152,7 +150,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
               Website ini adalah proyek pribadi yang dibuat dengan semangat untuk berbagi informasi kesehatan yang mudah dipahami dan bisa diandalkan.
             </p>
             
-            {/* Bagian Motivasi */}
             <div className="my-8" data-aos="fade-up" data-aos-delay="300">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4 flex items-center justify-center gap-2">
                 <FiHeart className="text-red-500" />
@@ -165,7 +162,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
 
             <hr className="my-10 border-gray-300 dark:border-gray-700 w-2/3 mx-auto" data-aos="zoom-in" data-aos-delay="400" />
 
-            {/* Bagian Sumber dan Teknologi */}
             <div className="my-8" data-aos="fade-up" data-aos-delay="500">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4 flex items-center justify-center gap-2">
                 <FiSearch className="text-blue-500" />
@@ -181,7 +177,7 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
                 <FiCode className="text-purple-500" />
                 Dibuat Dengan
               </h2>
-              <p className="text-700 dark:text-gray-200 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Website ini dibangun menggunakan teknologi modern seperti React.js dan Tailwind CSS, memberikan pengalaman pengguna yang cepat, responsif, dan elegan.
               </p>
             </div>

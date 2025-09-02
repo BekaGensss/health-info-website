@@ -1,3 +1,4 @@
+// src/pages/ArticleArchivePage.jsx
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -8,8 +9,8 @@ import { FiArchive } from 'react-icons/fi';
 import SkeletonCard from '../components/SkeletonCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Particles from 'react-tsparticles'; // <-- Tambahan
-import { loadSlim } from 'tsparticles-slim'; // <-- Tambahan
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim';
 
 const ARTICLES_PER_PAGE = 6;
 
@@ -40,7 +41,6 @@ const ArticleArchivePage = ({ isDarkMode, setIsDarkMode }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Logika partikel sama seperti di HomePage.jsx
   const particlesInit = async (main) => {
     await loadSlim(main);
   };
@@ -140,13 +140,12 @@ const ArticleArchivePage = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative">
       <Particles
-        id="tsparticles"
+        id="tsparticles-archive"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
         init={particlesInit}
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
       
-      {/* Konten utama sekarang berada di atas partikel */}
       <div className="relative z-10">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <main className="container mx-auto px-4 py-8">

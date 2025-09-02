@@ -1,10 +1,10 @@
+// src/components/Footer.jsx
 import React, { useState, useEffect } from 'react';
 import { FiChevronUp } from 'react-icons/fi';
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
 
-  // Fungsi untuk menampilkan/menyembunyikan tombol scroll
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400){
       setShowScroll(true);
@@ -13,14 +13,12 @@ const Footer = () => {
     }
   };
 
-  // Fungsi untuk menggulir ke bagian atas halaman
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
     window.addEventListener('scroll', checkScrollTop);
-    // Membersihkan event listener saat komponen di-unmount
     return () => window.removeEventListener('scroll', checkScrollTop);
   }, [showScroll]);
 
@@ -29,7 +27,7 @@ const Footer = () => {
       <div className="container mx-auto text-center px-4">
         
         {/* Bagian Tautan Media Sosial dengan Ikon SVG */}
-        <div className="flex justify-center items-center space-x-6 mb-4">
+        <div className="flex flex-wrap justify-center items-center space-x-4 mb-4">
           
           {/* Tautan X (Twitter) - Ikon 3D Mirip Asli */}
           <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors duration-300">
@@ -73,13 +71,10 @@ const Footer = () => {
           </a>
         </div>
         
-        {/* Teks Hak Cipta */}
         <p className="text-sm">&copy; 2025 Info Sehat. Semua hak cipta dilindungi.</p>
         <p className="text-xs mt-1">Dibuat dengan ❤️ oleh Dev Bara Kusuma</p>
-
       </div>
 
-      {/* Tombol Kembali ke Atas */}
       {showScroll && (
         <button
           onClick={scrollTop}
