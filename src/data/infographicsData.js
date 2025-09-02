@@ -2,8 +2,8 @@ export const infographics = [
   {
     id: 'info-1',
     title: 'menanggulangi HIV/AIDS',
-    thumbnailUrl: '/images/Sudah Pahamkah Kita Dengan Pencegahan HIV_AIDS.jpeg', 
-    imageUrl: '/images/Poster Pencegahan HIV Kreatif Berwarna Ungu.png',
+    thumbnailUrl: 'images/Sudah Pahamkah Kita Dengan Pencegahan HIV_AIDS.jpeg', 
+    imageUrl: 'images/Poster Pencegahan HIV Kreatif Berwarna Ungu.png',
     description: 'Beberapa cara visual untuk Menanggulangi HIV & AIDS yang direkomendasikan.', 
   },
   {
