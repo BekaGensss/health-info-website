@@ -1,4 +1,5 @@
 // src/pages/InfographicPage.jsx
+
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,10 +10,9 @@ import { FiImage, FiX } from 'react-icons/fi';
 import { Helmet } from 'react-helmet-async';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Particles from 'react-tsparticles'; // <-- Tambahan
-import { loadSlim } from 'tsparticles-slim'; // <-- Tambahan
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim';
 
-// Konfigurasi modal untuk aksesibilitas
 Modal.setAppElement('#root');
 
 const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
@@ -21,24 +21,20 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    // Inisialisasi AOS
     AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
     AOS.refresh();
 
-    // Simulasikan loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  // Fungsi untuk membuka modal dengan data infografis yang dipilih
   const openModal = (info) => {
     setSelectedImage(info);
     setModalIsOpen(true);
   };
 
-  // Fungsi untuk menutup modal
   const closeModal = () => {
     setModalIsOpen(false);
     setSelectedImage(null);
@@ -46,85 +42,36 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
 
   const hasInfographics = infographics && Array.isArray(infographics) && infographics.length > 0;
 
-  // Logika partikel sama seperti di HomePage.jsx
   const particlesInit = async (main) => {
     await loadSlim(main);
   };
 
   const particlesOptions = {
     background: {
-      color: {
-        value: "transparent",
-      },
+      color: { value: "transparent" },
     },
     fpsLimit: 120,
     interactivity: {
       events: {
-        onClick: {
-          enable: true,
-          mode: "push",
-        },
-        onHover: {
-          enable: true,
-          mode: "repulse",
-        },
+        onClick: { enable: true, mode: "push" },
+        onHover: { enable: true, mode: "repulse" },
         resize: true,
       },
       modes: {
-        bubble: {
-          distance: 400,
-          duration: 2,
-          opacity: 0.8,
-          size: 40,
-        },
-        push: {
-          quantity: 4,
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-        },
+        bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40 },
+        push: { quantity: 4 },
+        repulse: { distance: 200, duration: 0.4 },
       },
     },
     particles: {
-      color: {
-        value: "#d1d5db", 
-      },
-      links: {
-        color: "#d1d5db", 
-        distance: 150,
-        enable: true,
-        opacity: 0.5,
-        width: 1,
-      },
-      collisions: {
-        enable: true,
-      },
-      move: {
-        direction: "none",
-        enable: true,
-        outMode: "bounce",
-        random: false,
-        speed: 1,
-        straight: false,
-      },
-      number: {
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-        value: 80,
-      },
-      opacity: {
-        value: 0.5,
-      },
-      shape: {
-        type: "circle",
-      },
-      size: {
-        random: true,
-        value: 5,
-      },
+      color: { value: "#d1d5db" },
+      links: { color: "#d1d5db", distance: 150, enable: true, opacity: 0.5, width: 1 },
+      collisions: { enable: true },
+      move: { direction: "none", enable: true, outMode: "bounce", random: false, speed: 1, straight: false },
+      number: { density: { enable: true, value_area: 800 }, value: 80 },
+      opacity: { value: 0.5 },
+      shape: { type: "circle" },
+      size: { random: true, value: 5 },
     },
     detectRetina: true,
   };
@@ -133,28 +80,21 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
     ...particlesOptions,
     particles: {
       ...particlesOptions.particles,
-      color: {
-        value: "#6ee7b7",
-      },
-      links: {
-        ...particlesOptions.particles.links,
-        color: "#6ee7b7",
-      },
+      color: { value: "#6ee7b7" },
+      links: { ...particlesOptions.particles.links, color: "#6ee7b7" },
     },
   };
 
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative">
-      {/* Tambahkan latar belakang partikel */}
+    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative flex flex-col">
       <Particles
-        id="tsparticles-infographic" // Beri ID unik
+        id="tsparticles-infographic"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
         init={particlesInit}
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
 
-      {/* Konten utama sekarang berada di atas partikel */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-grow">
         <Helmet>
           <title>Infografis Kesehatan | Info Sehat</title>
           <meta name="description" content="Kumpulan infografis kesehatan yang mudah dipahami, menarik, dan informatif." />
@@ -165,7 +105,8 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
         </Helmet>
         
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <main className="container mx-auto px-4 py-12 md:py-20">
+        
+        <main className="container mx-auto px-4 py-12 md:py-20 flex-grow">
           <section className="text-center mb-12">
             <h1
               className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 leading-tight flex justify-center items-center gap-2"
@@ -223,6 +164,7 @@ const InfographicPage = ({ isDarkMode, setIsDarkMode }) => {
             </div>
           )}
         </main>
+        
         <Footer />
 
         <Modal

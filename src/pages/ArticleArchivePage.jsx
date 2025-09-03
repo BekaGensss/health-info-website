@@ -1,4 +1,5 @@
 // src/pages/ArticleArchivePage.jsx
+
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -138,7 +139,7 @@ const ArticleArchivePage = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative">
+    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative flex flex-col">
       <Particles
         id="tsparticles-archive"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
@@ -146,9 +147,9 @@ const ArticleArchivePage = ({ isDarkMode, setIsDarkMode }) => {
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
       
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-grow">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <main className="container mx-auto px-4 py-8">
+        <main className="container mx-auto px-4 py-8 flex-grow">
           <section className="text-center mb-12">
             <h1 
               className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 leading-tight flex justify-center items-center gap-2"

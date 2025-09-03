@@ -1,23 +1,23 @@
+// src/pages/ContactPage.jsx
+
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
-import { Helmet } from 'react-helmet-async'; // <-- Tambahan
+import { Helmet } from 'react-helmet-async';
 import { FiMail } from 'react-icons/fi';
-import AOS from 'aos'; // <-- Tambahan
-import 'aos/dist/aos.css'; // <-- Tambahan
-import Particles from 'react-tsparticles'; // <-- Tambahan
-import { loadSlim } from 'tsparticles-slim'; // <-- Tambahan
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim';
 
 const ContactPage = ({ isDarkMode, setIsDarkMode }) => {
 
   useEffect(() => {
-    // Inisialisasi AOS
     AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
     AOS.refresh();
   }, []);
 
-  // Logika partikel sama seperti di HomePage.jsx
   const particlesInit = async (main) => {
     await loadSlim(main);
   };
@@ -115,7 +115,7 @@ const ContactPage = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen relative font-sans transition-colors duration-500 ease-in-out">
+    <div className="bg-white dark:bg-gray-950 min-h-screen relative font-sans transition-colors duration-500 ease-in-out flex flex-col">
       {/* Tambahkan latar belakang partikel */}
       <Particles
         id="tsparticles-contact"
@@ -125,7 +125,7 @@ const ContactPage = ({ isDarkMode, setIsDarkMode }) => {
       />
       
       {/* Konten utama di lapisan atas agar interaktif */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-grow">
         <Helmet>
           <title>Hubungi Kami | Info Sehat</title>
           <meta name="description" content="Hubungi kami untuk pertanyaan, saran, atau kolaborasi." />
@@ -136,7 +136,7 @@ const ContactPage = ({ isDarkMode, setIsDarkMode }) => {
         
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         
-        <main className="container mx-auto px-4 py-12 md:py-20 flex justify-center">
+        <main className="container mx-auto px-4 py-12 md:py-20 flex justify-center flex-grow">
           <div 
             className="w-full max-w-xl bg-gray-50 dark:bg-gray-800 p-8 md:p-12 rounded-3xl shadow-2xl transition-all duration-500 ease-in-out"
             data-aos="fade-up"

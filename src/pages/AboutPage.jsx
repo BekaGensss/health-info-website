@@ -1,17 +1,16 @@
 // src/pages/AboutPage.jsx
+
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import PageLayout from '../components/PageLayout';
 import { FiInfo, FiHeart, FiSearch, FiCode } from 'react-icons/fi';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Particles from 'react-tsparticles'; // <-- Tambahan
-import { loadSlim } from 'tsparticles-slim'; // <-- Tambahan
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim';
 
 const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
   useEffect(() => {
-    // Inisialisasi AOS saat komponen dimuat
     AOS.init({
       duration: 800,
       once: true,
@@ -20,85 +19,36 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
     AOS.refresh();
   }, []);
 
-  // Logika partikel sama seperti di HomePage.jsx
   const particlesInit = async (main) => {
     await loadSlim(main);
   };
 
   const particlesOptions = {
     background: {
-      color: {
-        value: "transparent",
-      },
+      color: { value: "transparent" },
     },
     fpsLimit: 120,
     interactivity: {
       events: {
-        onClick: {
-          enable: true,
-          mode: "push",
-        },
-        onHover: {
-          enable: true,
-          mode: "repulse",
-        },
+        onClick: { enable: true, mode: "push" },
+        onHover: { enable: true, mode: "repulse" },
         resize: true,
       },
       modes: {
-        bubble: {
-          distance: 400,
-          duration: 2,
-          opacity: 0.8,
-          size: 40,
-        },
-        push: {
-          quantity: 4,
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-        },
+        bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40 },
+        push: { quantity: 4 },
+        repulse: { distance: 200, duration: 0.4 },
       },
     },
     particles: {
-      color: {
-        value: "#d1d5db", 
-      },
-      links: {
-        color: "#d1d5db", 
-        distance: 150,
-        enable: true,
-        opacity: 0.5,
-        width: 1,
-      },
-      collisions: {
-        enable: true,
-      },
-      move: {
-        direction: "none",
-        enable: true,
-        outMode: "bounce",
-        random: false,
-        speed: 1,
-        straight: false,
-      },
-      number: {
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-        value: 80,
-      },
-      opacity: {
-        value: 0.5,
-      },
-      shape: {
-        type: "circle",
-      },
-      size: {
-        random: true,
-        value: 5,
-      },
+      color: { value: "#d1d5db" },
+      links: { color: "#d1d5db", distance: 150, enable: true, opacity: 0.5, width: 1 },
+      collisions: { enable: true },
+      move: { direction: "none", enable: true, outMode: "bounce", random: false, speed: 1, straight: false },
+      number: { density: { enable: true, value_area: 800 }, value: 80 },
+      opacity: { value: 0.5 },
+      shape: { type: "circle" },
+      size: { random: true, value: 5 },
     },
     detectRetina: true,
   };
@@ -107,18 +57,13 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
     ...particlesOptions,
     particles: {
       ...particlesOptions.particles,
-      color: {
-        value: "#6ee7b7",
-      },
-      links: {
-        ...particlesOptions.particles.links,
-        color: "#6ee7b7",
-      },
+      color: { value: "#6ee7b7" },
+      links: { ...particlesOptions.particles.links, color: "#6ee7b7" },
     },
   };
 
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative">
+    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 ease-in-out relative flex flex-col">
       <Particles
         id="tsparticles-about"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
@@ -126,14 +71,13 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-grow">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <main className="container mx-auto px-4 py-12 md:py-20">
+        <main className="container mx-auto px-4 py-12 md:py-20 flex-grow">
           <div 
             className="bg-gray-50 dark:bg-gray-800 rounded-3xl shadow-2xl p-6 md:p-12 text-center transition-all duration-500 ease-in-out transform hover:scale-[1.01]"
             data-aos="fade-up"
           >
-            
             <h1 
               className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-4 flex items-center justify-center gap-3"
               data-aos="fade-up"
@@ -181,7 +125,6 @@ const AboutPage = ({ isDarkMode, setIsDarkMode }) => {
                 Website ini dibangun menggunakan teknologi modern seperti React.js dan Tailwind CSS, memberikan pengalaman pengguna yang cepat, responsif, dan elegan.
               </p>
             </div>
-
           </div>
         </main>
         <Footer />

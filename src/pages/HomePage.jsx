@@ -1,3 +1,5 @@
+// src/components/HomePage.jsx
+
 import React, { useState, useEffect, useCallback } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -211,7 +213,8 @@ const HomePage = ({ isDarkMode, setIsDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16 relative z-20" data-aos="fade-up" data-aos-delay="300">
+        {/* --- Bagian yang diperbaiki --- */}
+        <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-2 md:gap-4 mb-16 relative z-20" data-aos="fade-up" data-aos-delay="300">
           {categories.map(category => (
             <Button
               key={category}
@@ -222,6 +225,7 @@ const HomePage = ({ isDarkMode, setIsDarkMode }) => {
             </Button>
           ))}
         </div>
+        {/* --- Akhir Bagian yang diperbaiki --- */}
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 flex items-center gap-2" data-aos="fade-right">

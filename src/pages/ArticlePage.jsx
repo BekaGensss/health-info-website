@@ -1,3 +1,5 @@
+// src/pages/ArticlePage.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -60,9 +62,9 @@ const ArticlePage = ({ isDarkMode, setIsDarkMode }) => {
 
   if (!article) {
     return (
-      <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500">
+      <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 flex flex-col">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <main className="container mx-auto px-4 py-12 text-center">
+        <main className="container mx-auto px-4 py-12 text-center flex-grow">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Artikel tidak ditemukan</h1>
         </main>
         <Footer />
@@ -100,14 +102,14 @@ const ArticlePage = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 relative">
+    <div className="bg-white dark:bg-gray-950 min-h-screen font-sans transition-colors duration-500 relative flex flex-col">
       <Particles
         id="tsparticles-article"
         className="fixed inset-0 z-0 opacity-50 transition-opacity duration-500"
         init={particlesInit}
         options={isDarkMode ? darkParticlesOptions : particlesOptions}
       />
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-grow">
         <Helmet>
           <title>{article.title} | Info Sehat</title>
           <meta name="description" content={article.description} />
@@ -122,7 +124,7 @@ const ArticlePage = ({ isDarkMode, setIsDarkMode }) => {
         </Helmet>
         
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <main className="container mx-auto px-4 py-12 md:py-20">
+        <main className="container mx-auto px-4 py-12 md:py-20 flex-grow">
           {isLoading ? (
             <ArticleSkeleton />
           ) : (
