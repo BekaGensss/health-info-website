@@ -9,11 +9,10 @@ export const infographics = [
   },
   {
     id: 'info-2',
-    title: 'Manfaat Minum Air Putih',
-    // Perbaikan: Jalur tanpa garis miring di awal
-    thumbnailUrl: 'images/infographics/water-benefits-thumb.jpg',
-    imageUrl: 'images/infographics/water-benefits.jpg',
-    description: 'Kenali pentingnya hidrasi dan bagaimana air memengaruhi kesehatan Anda.',
+    title: 'Sistem Pernapasan Manusia',
+    thumbnailUrl: 'images/Sistem-Pernapasan-Manusia.jpg',
+    imageUrl: 'images/ORGAN SISTEM PERNAPASAN.jpeg',
+    description: 'Memahami anatomi dan cara kerja sistem pernapasan, serta cara menjaga kesehatan paru-paru.',
   },
   {
     id: 'info-3',

@@ -34,16 +34,63 @@ export const articles = [
     `,
   },
   {
-    id: '2',
-    title: 'Manfaat Tidur Cukup untuk Otak dan Tubuh',
-    description: 'Pelajari mengapa istirahat yang berkualitas sangat penting.',
-    imageUrl: 'images/sleep-benefits.jpg',
-    category: 'Kesehatan Mental',
-    author: 'Siti Nur Aini',
-    date: '5 Agustus 2025',
-    tags: ['tidur', 'otak', 'kesehatan-mental'],
-    pdfUrl: 'documents/manfaat-tidur-cukup.pdf',
-    content: `...`,
+    id: 'respiratory-system',
+title: 'Sistem Pernapasan: Mengenal Hubungan Hidung Sampai Alveolus',
+description: 'Memahami cara kerja sistem pernapasan, dari anatomi, fisiologi, hingga cara menjaga kesehatan paru-paru.',
+imageUrl: 'images/sistem-pernapasan.jpg',
+category: 'Kesehatan Umum',
+author: 'Farah Qulbi Amelia',
+date: '4 September 2025',
+tags: ['sistem-pernapasan', 'paru-paru', 'kesehatan-umum'],
+pdfUrl: 'documents/SISTEM-PERNAFASAN.pdf',
+content: `
+<h2>Apa Itu Sistem Pernapasan?</h2>
+<p>Sistem pernapasan adalah "jalur oksigen" yang memasok O2 ke tubuh dan membuang CO2 sebagai sisa metabolisme. Tanpa suplai oksigen yang stabil, sel-sel kita tidak bisa membuat energi. Organ utamanya meliputi hidung, tenggorokan (faring), kotak suara (laring), trakea, bronkus, bronkiolus, alveolus (kantung udara tempat tukar gas), serta paru-paru.</p>
+
+<h3>Bagaimana Cara Kerjanya?</h3>
+<h4>1. Anatomi Sistem Pernapasan</h4>
+<p>Sistem pernapasan manusia terdiri dari saluran pernapasan atas dan bawah. Saluran atas dimulai dari hidung, tempat udara disaring, dilembapkan, dan dihangatkan. Udara lalu melewati faring dan laring. Laring dilengkapi epiglotis, katup yang menutup saat kita menelan untuk mencegah makanan masuk ke jalan napas. Selanjutnya, udara melewati trakea, yang bercabang menjadi bronkus, bronkiolus, dan berakhir di alveolus. Di alveolus inilah pertukaran gas terjadi. Paru-paru dilapisi selaput tipis bernama pleura untuk mengurangi gesekan.</p>
+
+<h4>2. Fisiologi Sistem Pernapasan</h4>
+<p>Pernapasan dibagi menjadi dua tahap: inspirasi (menghirup) dan ekspirasi (mengembuskan). Saat inspirasi, otot diafragma berkontraksi sehingga rongga dada membesar dan udara masuk. Saat ekspirasi, otot-otot relaksasi, rongga dada mengecil, dan udara keluar. Pertukaran gas berlangsung di alveolus, di mana oksigen diikat oleh hemoglobin dalam darah dan karbon dioksida dikeluarkan. Pengaturan pernapasan dikendalikan oleh pusat pernapasan di otak yang sensitif terhadap kadar CO2.</p>
+
+<h3>Penyakit Umum pada Sistem Pernapasan</h3>
+<p>Berikut adalah beberapa penyakit pernapasan yang umum:</p>
+<ul>
+    <li><strong>Asma:</strong> Peradangan kronis saluran napas yang menyebabkan penyempitan dan hipersensitivitas.</li>
+    <li><strong>ISPA:</strong> Infeksi saluran pernapasan, sering disebabkan oleh virus (common cold/flu) atau bakteri.</li>
+    <li><strong>Pneumonia:</strong> Infeksi paru-paru yang menyebabkan demam, batuk berdahak, dan sesak napas.</li>
+    <li><strong>TBC (Tuberkulosis):</strong> Infeksi bakteri yang ditandai batuk lebih dari 2 minggu, keringat malam, dan penurunan berat badan.</li>
+    <li><strong>PPOK:</strong> Kerusakan paru progresif, sering terjadi akibat merokok.</li>
+    <li><strong>Sleep Apnea (OSA):</strong> Henti napas saat tidur yang menyebabkan dengkuran keras dan kantuk di siang hari.</li>
+</ul>
+
+<h3>Pemeriksaan dan Diagnosis</h3>
+<p>Untuk mendiagnosis gangguan pernapasan, dokter dapat melakukan beberapa pemeriksaan:</p>
+<ul>
+    <li><strong>Anamnesis dan Pemeriksaan Fisik:</strong> Wawancara medis dan mendengarkan suara napas dengan stetoskop.</li>
+    <li><strong>Spirometri:</strong> Mengukur kapasitas dan kecepatan pernapasan untuk menilai fungsi paru.</li>
+    <li><strong>Rontgen dada dan CT-scan:</strong> Pemeriksaan pencitraan untuk melihat kondisi paru.</li>
+    <li><strong>Tes Alergi:</strong> Mengidentifikasi pemicu alergi seperti debu atau bulu hewan.</li>
+    <li><strong>Uji TBC:</strong> Tes untuk mendeteksi infeksi bakteri TBC.</li>
+</ul>
+
+<h3>Pencegahan dan Preventif</h3>
+<p>Menjaga paru-paru tetap sehat jauh lebih penting daripada mengobati. Lakukan langkah-langkah berikut:</p>
+<ul>
+    <li><strong>Berhenti Merokok:</strong> Langkah paling efektif untuk kesehatan paru.</li>
+    <li><strong>Vaksinasi:</strong> Vaksinasi influenza dan pneumokokus untuk kelompok berisiko.</li>
+    <li><strong>Jaga Kualitas Udara:</strong> Gunakan masker saat polusi tinggi dan pastikan ventilasi rumah baik.</li>
+    <li><strong>Olahraga Teratur:</strong> Meningkatkan kapasitas paru dan imunitas.</li>
+    <li><strong>Pertahankan Berat Badan Ideal:</strong> Mengurangi risiko <i>sleep apnea</i>.</li>
+    <li><strong>Etika Batuk dan Cuci Tangan:</strong> Mencegah penyebaran infeksi.</li>
+</ul>
+
+<h3>Kapan Harus ke Dokter?</h3>
+<p>Segera kunjungi dokter jika Anda mengalami gejala yang tidak membaik, sesak napas berat, batuk darah, atau demam tinggi yang persisten.</p>
+
+<p>Sistem pernapasan bekerja 24/7. Mulailah dari hal kecil: berhenti merokok, rajin olahraga, peduli kualitas udara, dan jangan lewatkan vaksinasi. Ingat, napas itu gratis—tapi kalau sudah sakit paru, biayanya bisa mahal. Jaga paru-paru Anda agar tetap sehat dan bebas bernapas lega.</p>
+`,
   },
   {
     id: '3',
@@ -178,10 +225,10 @@ export const infographics = [
   },
   {
     id: 'info-2',
-    title: 'Manfaat Minum Air Putih',
-    thumbnailUrl: 'images/infographics/water-benefits-thumb.jpg',
-    imageUrl: 'images/infographics/water-benefits.jpg',
-    description: 'Kenali pentingnya hidrasi dan bagaimana air memengaruhi kesehatan Anda.',
+    title: 'Sistem Pernapasan Manusia',
+    thumbnailUrl: 'images/Sistem-Pernapasan-Manusia.jpg',
+    imageUrl: 'images/ORGAN SISTEM PERNAPASAN.jpeg',
+    description: 'Memahami anatomi dan cara kerja sistem pernapasan, serta cara menjaga kesehatan paru-paru.',
   },
   {
     id: 'info-3',
