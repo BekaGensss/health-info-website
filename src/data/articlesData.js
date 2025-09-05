@@ -94,27 +94,154 @@ content: `
   },
   {
     id: '3',
-    title: 'Resep Smoothie Hijau Penambah Energi',
-    description: 'Mulai hari Anda dengan minuman yang penuh nutrisi.',
-    imageUrl: 'images/green-smoothie.jpg',
-    category: 'Nutrisi',
-    author: 'Budi Santoso',
-    date: '10 Agustus 2025',
-    tags: ['resep', 'nutrisi', 'smoothie'],
-    pdfUrl: 'documents/resep-smoothie-hijau.pdf',
-    content: `...`,
+    title: 'Sistem Sirkulasi Darah: Mengenal "Jalan Tol Kehidupan" di Tubuh Kita',
+    description: 'Pelajari bagaimana jantung, pembuluh darah, dan darah bekerja sama untuk menjaga tubuh tetap sehat dan bertenaga.',
+    imageUrl: 'images/peredaran-darah-bersih-dan-kotor.jpg',
+    category: 'Kesehatan Umum',
+    author: 'Farah Qulbi Amelia',
+    date: '6 September 2025',
+    tags: ['sistem peredaran darah', 'jantung', 'kesehatan jantung', 'sirkulasi darah'],
+    pdfUrl: 'documents/SISTEM PEREDARAN DARAH.pdf',
+    content: `
+        <p>Sistem peredaran darah adalah jaringan transportasi utama dalam tubuh manusia. Ia bertugas mengedarkan oksigen, nutrisi, hormon, dan zat-zat penting lainnya ke seluruh sel. Selain itu, sistem ini juga berfungsi membawa sisa-sisa metabolisme, seperti karbon dioksida dan urea, untuk dibuang. Tanpa sistem yang bekerja optimal, organ tubuh tidak akan bisa bertahan hidup karena suplai vital terputus.</p>
+        
+        <p><b>Mengenal Komponen Utama Sistem Peredaran Darah</b></p>
+        <p>Sistem ini terdiri dari tiga komponen utama yang bekerja sama secara harmonis:</p>
+        
+        <p><b>1. Jantung (The Heart)</b>
+        Jantung adalah organ berotot seukuran kepalan tangan yang terletak di tengah dada, sedikit ke arah kiri. Jantung memiliki empat ruang: atrium kanan, atrium kiri, ventrikel kanan, dan ventrikel kiri. Katup-katup jantung (trikuspid, bikuspid/mitral, aorta, dan pulmonal) berfungsi sebagai pintu satu arah yang memastikan aliran darah tidak berbalik.</p>
+        
+        <p><b>2. Pembuluh Darah</b>
+        <ul>
+            <li>Arteri: Bertugas membawa darah keluar dari jantung. Umumnya kaya oksigen, kecuali arteri pulmonalis.</li>
+            <li>Vena: Bertugas membawa darah kembali ke jantung. Umumnya kaya karbon dioksida, kecuali vena pulmonalis.</li>
+            <li>Kapiler: Jaringan pembuluh super kecil tempat terjadinya pertukaran oksigen, nutrisi, dan limbah dengan sel-sel tubuh.</li>
+        </ul></p>
+        
+        <p><b>3. Darah</b>
+        Darah adalah cairan vital yang mengalir dalam pembuluh. Komponennya meliputi:
+        <ul>
+            <li>Sel Darah Merah (Eritrosit): Berfungsi mengangkut oksigen menggunakan protein hemoglobin.</li>
+            <li>Sel Darah Putih (Leukosit): Bagian dari sistem kekebalan tubuh yang melawan infeksi.</li>
+            <li>Trombosit (Platelet): Berperan penting dalam proses pembekuan darah saat terjadi luka.</li>
+            <li>Plasma Darah: Cairan kekuningan yang menjadi medium transportasi bagi air, elektrolit, hormon, dan protein.</li>
+        </ul></p>
+        
+        <p><b>Bagaimana Cara Kerjanya?</b>
+        Sistem peredaran darah bekerja melalui dua siklus utama:</p>
+        
+        <p><b>1. Sirkulasi Pulmonal (Sirkulasi Kecil)</b>
+        Siklus ini berfokus pada pertukaran gas di paru-paru. Prosesnya dimulai ketika atrium kanan menerima darah miskin oksigen dari seluruh tubuh. Darah kemudian dipompa ke paru-paru melalui arteri pulmonalis. Di paru-paru, terjadi pertukaran gas: oksigen masuk ke darah, sementara karbon dioksida dikeluarkan melalui pernapasan. Darah yang sudah kaya oksigen kembali ke jantung melalui vena pulmonalis, masuk ke atrium kiri.</p>
+        
+        <p><b>2. Sirkulasi Sistemik (Sirkulasi Besar)</b>
+        Siklus ini bertugas mendistribusikan oksigen dan nutrisi ke seluruh tubuh. Dari atrium kiri, darah mengalir ke ventrikel kiri, yang memiliki otot paling tebal untuk memompa darah ke seluruh tubuh melalui aorta. Aorta bercabang menjadi arteri-arteri kecil hingga kapiler, di mana oksigen dan nutrisi dilepaskan ke jaringan. Darah yang telah melepaskan oksigen kembali ke jantung melalui vena cava superior dan inferior, lalu masuk ke atrium kanan untuk memulai siklus lagi.</p>
+        
+        <p><b>Penyakit Umum pada Sistem Peredaran Darah</b>
+        Gangguan pada sistem peredaran darah sering kali berkaitan dengan gaya hidup. Beberapa penyakit umum yang perlu diwaspadai adalah:</p>
+        
+        <ul>
+            <li>Hipertensi (Tekanan Darah Tinggi): Kondisi ini memaksa jantung bekerja lebih keras dan dapat merusak dinding arteri, meningkatkan risiko stroke dan serangan jantung.</li>
+            <li>Anemia: Kekurangan sel darah merah atau hemoglobin menyebabkan tubuh kekurangan oksigen, menimbulkan gejala seperti kelelahan dan pusing.</li>
+            <li>Aterosklerosis: Penumpukan plak di dinding arteri yang menyempitkan pembuluh darah, menghambat aliran darah, dan bisa memicu serangan jantung atau stroke.</li>
+            <li>Gagal Jantung: Kondisi di mana jantung tidak mampu memompa darah secara efektif, menyebabkan penderitanya sering merasa sesak napas dan cepat lelah.</li>
+            <li>Stroke: Terjadi ketika aliran darah ke otak terganggu, mengakibatkan kerusakan sel otak yang bisa terjadi dalam hitungan menit.</li>
+        </ul>
+        
+        <p><b>Pemeriksaan dan Diagnosis</b>
+        Untuk mendeteksi gangguan, dokter dapat melakukan beberapa pemeriksaan, di antaranya:</p>
+        
+        <ul>
+            <li>Pengukuran Tekanan Darah: Pemeriksaan rutin menggunakan tensimeter.</li>
+            <li>Elektrokardiogram (EKG): Merekam aktivitas listrik jantung untuk mendeteksi masalah irama atau kerusakan otot jantung.</li>
+            <li>Ekokardiografi: Menggunakan USG untuk melihat struktur dan fungsi jantung secara detail.</li>
+            <li>Tes Darah: Menganalisis kadar kolesterol, gula darah, dan hemoglobin.</li>
+        </ul>
+        
+        <p><b>Pencegahan: Langkah Terbaik Menjaga Kesehatan Jantung</b>
+        Mencegah lebih baik daripada mengobati. Terapkan langkah-langkah berikut untuk menjaga sistem peredaran darah tetap sehat:</p>
+        
+        <ol>
+            <li>Pola Makan Seimbang: Perbanyak konsumsi sayuran, buah, dan serat. Batasi makanan berlemak, gorengan, dan tinggi garam.</li>
+            <li>Olahraga Teratur: Lakukan olahraga aerobik ringan hingga sedang, seperti jalan cepat atau bersepeda, minimal 30 menit setiap hari.</li>
+            <li>Hindari Rokok dan Alkohol: Rokok merusak pembuluh darah, sementara alkohol berlebihan dapat melemahkan otot jantung.</li>
+            <li>Manajemen Stres dan Tidur Cukup: Kurangi stres dan pastikan Anda mendapatkan tidur 7–8 jam per malam untuk menjaga keseimbangan hormonal.</li>
+            <li>Rutin Cek Kesehatan: Lakukan pemeriksaan tekanan darah dan kolesterol secara berkala untuk deteksi dini.</li>
+        </ol>
+        
+        <p><b>Kapan Harus ke Dokter?</b>
+        Segera cari pertolongan medis jika Anda mengalami gejala seperti nyeri dada yang menjalar, sesak napas berat, jantung berdebar tidak teratur, atau mendadak merasa pusing berat dan pingsan. Jangan tunda, karena deteksi dini sangat krusial.</p>
+        
+        <p>Sistem peredaran darah adalah fondasi kesehatan tubuh Anda. Jaga "jalan tol" ini tetap lancar dengan menerapkan gaya hidup sehat. Ingat, jantung yang prima adalah kunci untuk hidup yang lebih sehat dan berenergi.</p>
+    `,
   },
   {
     id: '4',
-    title: 'Panduan Sederhana Meditasi untuk Pemula',
-    description: 'Tenangkan pikiran Anda dalam 10 menit setiap hari.',
-    imageUrl: 'images/meditation-guide.jpg',
-    category: 'Kesehatan Mental',
-    author: 'Ahmad Subardjo',
-    date: '15 Agustus 2025',
-    tags: ['meditasi', 'stres', 'pemula'],
-    pdfUrl: 'documents/panduan-meditasi-pemula.pdf',
-    content: `...`,
+    title: 'Sistem Pencernaan: Perjalanan Makanan Menjadi Energi',
+    description: 'Pelajari bagaimana tubuh mengubah setiap gigitan makanan menjadi sumber energi yang Anda butuhkan setiap hari.',
+    imageUrl: 'images/sistem-pencernaan.jpeg',
+    category: 'Kesehatan Umum',
+    author: 'Farah Qulbi Amelia',
+    date: '6 September 2025',
+    tags: ['sistem pencernaan', 'nutrisi', 'kesehatan usus'],
+    pdfUrl: 'documents/SISTEM PERNCERNAAN.pdf',
+    content: `
+        <p><b>Apa Itu Sistem Pencernaan?</b></p>
+        <p>Sistem pencernaan adalah "jalur pengolahan makanan" tubuh yang bekerja tanpa henti untuk mengubah makanan dan minuman menjadi zat gizi. Zat gizi ini kemudian diserap ke dalam darah agar bisa digunakan sel untuk energi, pertumbuhan, dan perbaikan jaringan. Sisa makanan yang tidak berguna akan dikeluarkan dalam bentuk feses. Tanpa sistem ini, nutrisi dari makanan yang kita konsumsi tidak akan bisa digunakan tubuh.</p>
+        
+        <p><b>Organ Utama Sistem Pencernaan</b></p>
+        <p>Sistem pencernaan terdiri dari dua kelompok organ utama:</p>
+        
+        <p><b>1. Saluran Pencernaan (Gastrointestinal Tract)</b><br>
+        Terdiri dari: mulut, faring, esofagus, lambung, usus halus, usus besar, rektum, dan anus.</p>
+        
+        <p><b>2. Organ Aksesori</b><br>
+        Terdiri dari: gigi, lidah, kelenjar ludah, hati, pankreas, dan kantong empedu.</p>
+
+        <p><b>Bagaimana Cara Kerjanya?</b></p>
+        <p>Sistem pencernaan manusia memiliki empat fungsi besar yang saling berkesinambungan: ingesti, digesti, absorpsi, dan defekasi. Keempat fungsi ini berjalan secara teratur mulai dari makanan masuk ke mulut hingga sisa yang tidak tercerna dikeluarkan dari tubuh.</p>
+        
+        <p><b>A. Ingesti (Pemasukan Makanan)</b><br>
+        Proses pencernaan dimulai saat makanan masuk ke dalam mulut. Gigi mengunyah makanan menjadi potongan lebih kecil, sementara lidah membantu mengatur posisinya dan mencampurnya dengan air liur yang mengandung enzim amilase untuk mulai memecah karbohidrat. Makanan yang sudah menjadi gumpalan lunak (bolus) kemudian ditelan dan diteruskan ke esofagus menuju lambung.</p>
+        
+        <p><b>B. Digesti (Pencernaan)</b><br>
+        Setelah makanan masuk, tubuh melanjutkan proses pencernaan, baik secara mekanik maupun kimiawi. Pencernaan mekanik berlangsung saat makanan dikunyah di mulut dan diaduk di lambung. Sementara itu, pencernaan kimiawi melibatkan enzim dan cairan pencernaan, seperti pepsin di lambung yang memecah protein, dan lipase yang membantu menguraikan lemak. Pada tahap ini, molekul-molekul besar dipecah menjadi zat gizi sederhana yang siap diserap.</p>
+
+        <p><b>C. Absorpsi (Penyerapan Nutrisi)</b><br>
+        Zat gizi hasil pemecahan diserap oleh tubuh melalui usus halus, yang permukaannya dipenuhi lipatan halus (vili dan mikrovili) untuk memaksimalkan penyerapan. Glukosa, vitamin, dan asam amino akan masuk ke aliran darah, sedangkan asam lemak dan gliserol diserap melalui pembuluh limfa. Dengan demikian, tubuh mendapatkan energi dan bahan baku untuk pertumbuhan serta perbaikan jaringan.</p>
+
+        <p><b>D. Defekasi (Pembuangan Sisa)</b><br>
+        Sisa makanan yang tidak tercerna dan tidak dapat diserap akan masuk ke usus besar. Di sini, air dan mineralnya diserap kembali hingga terbentuk feses. Feses kemudian disimpan di rektum sebelum akhirnya dikeluarkan melalui anus. Proses ini penting untuk menjaga keseimbangan tubuh dan mencegah penumpukan zat yang tidak diperlukan.</p>
+
+        <p><b>Penyakit Umum pada Sistem Pencernaan</b></p>
+        <p>Beberapa penyakit yang sering menyerang sistem pencernaan antara lain:</p>
+        <ul>
+            <li><b>Gastritis (Radang Lambung)</b>: Peradangan dinding lambung yang menimbulkan nyeri pada ulu hati dan mual.</li>
+            <li><b>GERD (Gastroesophageal Reflux Disease)</b>: Asam lambung naik ke esofagus, menyebabkan sensasi terbakar di dada.</li>
+            <li><b>Diare</b>: Buang air besar cair lebih dari tiga kali sehari, yang bisa menyebabkan dehidrasi.</li>
+            <li><b>Konstipasi (Sembelit)</b>: Kesulitan buang air besar karena kurang serat atau air.</li>
+            <li><b>Hepatitis</b>: Peradangan pada hati yang bisa disebabkan oleh virus.</li>
+            <li><b>Sirosis Hati</b>: Tahap akhir kerusakan hati kronis yang ditandai dengan terbentuknya jaringan parut.</li>
+            <li><b>Kanker Kolorektal</b>: Kanker yang menyerang usus besar atau rektum.</li>
+        </ul>
+
+        <p><b>Pencegahan dan Perawatan</b></p>
+        <p>Menjaga sistem pencernaan tetap sehat itu penting. Caranya sederhana, tetapi harus konsisten:</p>
+        <ul>
+            <li>Perbanyak makanan tinggi serat seperti sayur, buah, dan gandum.</li>
+            <li>Batasi makanan berlemak, pedas, dan junk food.</li>
+            <li>Minum air putih yang cukup, sekitar dua liter per hari.</li>
+            <li>Cuci tangan sebelum makan untuk mencegah infeksi.</li>
+            <li>Olahraga rutin untuk membantu kerja usus.</li>
+            <li>Hindari rokok dan alkohol.</li>
+            <li>Lakukan vaksinasi hepatitis dan skrining rutin jika diperlukan.</li>
+            <li>Kelola stres, karena kesehatan mental sangat memengaruhi pencernaan.</li>
+        </ul>
+
+        <p><b>Kapan Harus ke Dokter?</b></p>
+        <p>Segera cari pertolongan medis jika Anda mengalami gejala seperti nyeri perut berat, muntah darah, buang air besar berdarah/hitam pekat, atau berat badan turun drastis tanpa sebab. Jangan tunda, karena deteksi dini sangat krusial.</p>
+
+        <p>Sistem pencernaan adalah "pabrik pengolahan energi" tubuh. Jika pabriknya lancar, energi untuk aktivitas sehari-hari juga akan lancar. Jadi, jangan sepelekan pola makan sehat, cukupi asupan air, dan rajin berolahraga. Ingat, kesehatanmu bukan hanya angan-angan, tetapi juga butuh komitmen untuk menjaga pencernaanmu bahagia!</p>
+    `,
   },
   {
     id: '5',
@@ -232,17 +359,17 @@ export const infographics = [
   },
   {
     id: 'info-3',
-    title: 'Siklus Tidur Manusia',
-    thumbnailUrl: 'images/infographics/sleep-cycle-thumb.jpg',
-    imageUrl: 'images/infographics/sleep-cycle.jpg',
-    description: 'Bagaimana otak dan tubuh bekerja saat Anda tidur.',
+    title: 'Sistem Sirkulasi Darah: Mengenal "Jalan Tol Kehidupan" di Tubuh Kita',
+    thumbnailUrl: 'images/wa02.PNG',
+    imageUrl: 'images/SISTEM-PEREDARAN-DARAH.jpeg',
+    description: 'Memahami bagaimana jantung, pembuluh darah, dan darah bekerja sama untuk menjaga tubuh tetap sehat dan bertenaga.',
   },
   {
     id: 'info-4',
-    title: 'Tips Mengatasi Stres',
-    thumbnailUrl: 'images/infographics/stress-tips-thumb.jpg',
-    imageUrl: 'images/infographics/stress-tips.jpg',
-    description: '7 langkah sederhana untuk mengelola stres harian.',
+    title: 'Sistem Pencernaan: Perjalanan Makanan Menjadi Energi',
+    thumbnailUrl: 'images/wa03.jpg',
+    imageUrl: 'images/Sistem-pencernaan-pada-manusia.jpeg',
+    description: 'Pelajari bagaimana tubuh mengubah setiap gigitan makanan menjadi sumber energi yang Anda butuhkan setiap hari.',
   },
   {
     id: 'info-5',

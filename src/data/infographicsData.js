@@ -16,19 +16,17 @@ export const infographics = [
   },
   {
     id: 'info-3',
-    title: 'Siklus Tidur Manusia',
-    // Perbaikan: Jalur tanpa garis miring di awal
-    thumbnailUrl: 'images/Sudah Pahamkah Kita Dengan Pencegahan HIV_AIDS.jpeg',
-    imageUrl: 'images/infographics/sleep-cycle.jpg',
-    description: 'Bagaimana otak dan tubuh bekerja saat Anda tidur.',
+    title: 'Sistem Sirkulasi Darah: Mengenal "Jalan Tol Kehidupan" di Tubuh Kita',
+    thumbnailUrl: 'images/wa02.PNG',
+    imageUrl: 'images/SISTEM-PEREDARAN-DARAH.jpeg',
+    description: 'Memahami bagaimana jantung, pembuluh darah, dan darah bekerja sama untuk menjaga tubuh tetap sehat dan bertenaga.',
   },
   {
     id: 'info-4',
-    title: 'Tips Mengatasi Stres',
-    // Perbaikan: Jalur tanpa garis miring di awal
-    thumbnailUrl: 'images/infographics/stress-tips-thumb.jpg',
-    imageUrl: 'images/infographics/stress-tips.jpg',
-    description: '7 langkah sederhana untuk mengelola stres harian.',
+    title: 'Sistem Pencernaan: Perjalanan Makanan Menjadi Energi',
+    thumbnailUrl: 'images/wa03.jpg',
+    imageUrl: 'images/Sistem-pencernaan-pada-manusia.jpeg',
+    description: 'Pelajari bagaimana tubuh mengubah setiap gigitan makanan menjadi sumber energi yang Anda butuhkan setiap hari.',
   },
   {
     id: 'info-5',
